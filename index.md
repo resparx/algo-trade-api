@@ -14,12 +14,12 @@ by this we can calculate the efficiency of the rule and there by increasing the 
 <br/>
 ### **I'll list some sample rules and actions**
 <br/>
-## Rules (More to be added)
-### Average percentage fluctation for given interval of time
-So as the title suggests, when the fluctation of the particular coin touches the slab within the given time, its respective actions will be triggered
+## Rules (More to be added)  
+### Average percentage fluctation for given interval of time  
+So as the title suggests, when the fluctation of the particular coin touches the slab within the given time, its respective actions will be triggered  
 
-## Actions (More to be added)
-### Notifications
+## Actions (More to be added)  
+### Notifications  
 ![Canny](https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/91_Discord_logo_logos-512.png)  
 **Yayyy..! its canny here**.  
 Notifications comes from discord.... yes you're correct that's a web hook integrated to a private discord server. 
