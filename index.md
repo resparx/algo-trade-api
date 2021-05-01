@@ -11,9 +11,7 @@ The rules and actions will be pre-defined with its own set of keys for each and 
 You can algorithmize your trading pattern ,so that i can give you as a rule, I've integrated a specialized logger, it will log all the steps taken from your rule.
 by this we can calculate the efficiency of the rule and there by increasing the returns out of it  
 <br/>
-<br/>
-### **I'll list some sample rules and actions**
-<br/>
+### **I'll list some sample rules and actions**  
 ## Rules (More to be added)  
 ### Average percentage fluctation for given interval of time  
 So as the title suggests, when the fluctation of the particular coin touches the slab within the given time, its respective actions will be triggered  
