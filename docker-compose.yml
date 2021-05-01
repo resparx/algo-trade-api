@@ -1,0 +1,26 @@
+version: '3'
+services: 
+    redis:
+        image: redis
+        container_name: cache
+        ports:
+            - "6397:6397"
+
+    api: 
+        image: algo-trde
+        env_file: .env
+        build: .
+        depends_on:
+            - redis
+        networks:
+            - backend
+        ports:
+            - "9000:9000"
+        environment:
+            - REDIS_URL=redis://cache
+        volumes:
+            - ./webapp:/opt/webapp
+
+networks:
+  backend:
+    driver: bridge

@@ -3,17 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node src/index",
+    "docker-init": "npm install && npm start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "node-binance-api": "^0.12.5",
-    "node-cron": "2.0.3",
-    "serverless-http": "^2.7.0",
+    "node-cron": "^3.0.0",
+    "redis": "^3.1.2",
     "winston": "^3.3.3"
   }
 }
