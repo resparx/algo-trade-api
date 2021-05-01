@@ -1,8 +1,29 @@
-## Welcome to GitHub Pages
+## The new ERA for Trading Cryptos Algorithmically
 
-You can use the [editor on GitHub](https://github.com/resparx/algo-trade-api/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+By leveraging the apis of binance, Ive built some cool features on top of it. [List of binance api's here](https://binance-docs.github.io/apidocs/spot/en/#change-log).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+# How it works  
+Sooooooo, there is a set of rules or guidelines and actions that can be associated with a symbol(Coin to be simple), in order to execute one or more associated actions, the rules associated with the coin must be successfully undergone.  
+<br/>
+The rules and actions will be pre-defined with its own set of keys for each and can be associated with the coins in any fashion.  
+**Also...**
+You can algorithmize your trading pattern ,so that i can give you as a rule, I've integrated a specialized logger, it will log all the steps taken from your rule.
+by this we can calculate the efficiency of the rule and there by increasing the returns out of it  
+<br/>
+<br/>
+### **Ill list some sample rules and actions**
+<br/>  
+
+## Rules
+
+
+## Actions
+### List of Actions (More to be added)
+### Notifications
+![Canny](https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/91_Discord_logo_logos-512.png)  
+**Yayyy..! its canny here**.  
+Notifications comes from discord.... yes you're correct that's a web hook integrated to a private discord server. 
 
 ### Markdown
 
@@ -12,7 +33,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 # Header 1
-## Header 2
 ### Header 3
 
 - Bulleted
@@ -23,7 +43,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](https://i.imgur.com/Kjg8wim.png)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
