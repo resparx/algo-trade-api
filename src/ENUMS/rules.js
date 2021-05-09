@@ -1,8 +1,8 @@
 export default [
     {
-        rule: 'AVERAGE_FLUCTUATION_INTERVAl',
+        rule: 'SMA',
         id: 1,
-        name: 'avgFluctuationForInterval',
-        desc: 'When target percentage meets the Average fluctuations for a user defined period of time, the mentioned actions will get executed'
-    }
+        name: 'SIMPLE MOVING AVERAGE'
+    },
+    
 ]
