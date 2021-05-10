@@ -37,5 +37,6 @@ export default [
   },
 ].map((data) => ({ ruleAction: [{
   rules: [1],
+  lookbackPeriod: 20,
   actions: [1]
-}], quoteAsset: "USDT", limit: 5, ...data }));
+}], quoteAsset: "BUSD", limit: 50, ...data }));

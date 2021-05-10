@@ -1,17 +1,18 @@
-import { actionsExecutor } from "../actions/actionsExecutor";
+import cron from "node-cron"
 import { ruleExecutor } from "../rules/ruleExecutor";
 
 export const executor = ({
-    symbol,
+    baseAsset,
+    quoteAsset,
+    limit,
     interval,
-    cronInterval = '*/5 * * * * *',
     ruleAction
 }) => {
+    let cronInterval = '*/5 * * * * *'
+    const symbol = `${baseAsset}${quoteAsset}`
     cron.schedule(cronInterval, () => {
-        ruleAction.array.forEach(({rules, actions}) => {
-            if(ruleExecutor(rules)){
-                actionsExecutor(actions)
-            }
+        ruleAction.map(({rules, actions, lookbackPeriod}) => {
+            ruleExecutor({symbol, lookbackPeriod, interval, rules, actions, limit})
         });
     })
 }

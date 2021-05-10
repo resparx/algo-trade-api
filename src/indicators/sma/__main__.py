@@ -12,7 +12,7 @@ floatdata = data.astype(float)
 ser = pd.Series(floatdata)
 
 sma = SMA()
-result = sma.get_value_list(ser, int(sys.argv[2]))
-
-print(result)
+result = sma.get_value_list(ser, int(sys.argv[2])).tolist()
+strResult = ", ".join([str(i) for i in result])
+print(strResult)
 

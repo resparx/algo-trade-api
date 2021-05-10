@@ -1,14 +1,16 @@
 import axios from "axios";
 import config from "../../../config";
 
-export const getCandles = async ({ baseAsset, quoteAsset, interval, limit }) =>
-  await axios.get(`${config.apiUrl}/api/v3/klines`, {
+export const getCandles = async ({ symbol, interval, limit }) => {
+  const data = await axios.get(`${config.apiUrl}/api/v3/klines`, {
     params: {
-      symbol: `${baseAsset}${quoteAsset}`,
-      interval: interval,
-      limit: limit,
+      symbol,
+      interval,
+      limit,
     },
   });
+  return data;
+};
 
 /**
  * candle entity
