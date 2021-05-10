@@ -6,11 +6,12 @@ import sys
 # importing an indicator class
 from technical_indicators_lib import SMA
 
-data = np.array(int(sys.argv[1]))
-ser = pd.Series(data)
+arr = sys.argv[1].split(',')
+data = np.array(arr)
+floatdata = data.astype(float)
+ser = pd.Series(floatdata)
 
 sma = SMA()
-
 result = sma.get_value_list(ser, int(sys.argv[2]))
 
 print(result)
